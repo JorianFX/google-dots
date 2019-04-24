@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Google Dots Animation | CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="/favicon.png">
+	<style>
+		html {
+  			background: url("bg.jpg") no-repeat center center fixed; 
+ 			-webkit-background-size: cover;
+ 			-moz-background-size: cover;
+			-o-background-size: cover;
+ 			background-size: cover;
+			height: 100%;
+			overflow: hidden;
+		}
+		
+		@keyframes google {
+			0% {margin-top: 0px; }
+			335% {margin-top: -100px}
+			66% {margin-top: 100px;}
+			100% {margin-top: 0px}
+		}
+		
+		.centerdiv {
+    	 margin: 50px auto;
+     	width: 250px; 
+		top: 50%;
+		}
+		
+		.google {
+			margin-top: 50px;
+			margin-left: 40px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="centerdiv">
+		<h2 style="text-align: center; color: " class="Product-Sans">Google Dot Animation (CSS)</h2>
+		<p style="text-align: center; margin-top: -15px" class="Product-Sans">Made by JorianFX</p>
+		<a href="https://github.com/JorianFX/google-dots/"><p style="text-align: center;margin-top: -15px;" class="Product-Sans">View Source</p></a>
+		<div class="google">
+			<div style="background-color: #4285F4; width: 20px; height: 20px; border-radius: 100%; animation: google 4s infinite; float: left"></div>
+			<div style="background-color: #DB4437; width: 20px; height: 20px; border-radius: 100%; animation: google 4s infinite; float: left; margin-left: 30px; animation-delay: 0.15s"></div>
+			<div style="background-color: #F4B400; width: 20px; height: 20px; border-radius: 100%; animation: google 4s infinite; float: left; margin-left: 30px; animation-delay: 0.3s"></div>
+			<div style="background-color: #0F9D58; width: 20px; height: 20px; border-radius: 100%; animation: google 4s infinite; float: left; margin-left: 30px; animation-delay: 0.45s"></div>
+		</div>
+	</div>
+<script src="https://sethusenthil.com/Product-Sans/api/font.js"></script>                
+</body>
+</html>
